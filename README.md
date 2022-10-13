@@ -1,7 +1,6 @@
-# claw-machine
-CLI for migrating local users on Privilege Cloud to Identity Security Platform
+# CLI for migrating local users from Privilege Cloud to Identity Security Platform
 
-![go run main.go](./assets/screencap.png.png)
+![go run main.go](https://raw.githubusercontent.com/quincycheng/claw-machine/main/assets/screencap.png)
 
 ## Setup
 1. Clone this repo
