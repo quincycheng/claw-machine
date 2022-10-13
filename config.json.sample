@@ -1,0 +1,35 @@
+{
+    "from": {
+        "url": "https://<subdomain>.privilegecloud.cyberark.com",
+        "user": "<user name of privilege cloud>"
+        },
+    "to": {
+        "url": "https://<tenant>.cyberark.cloud",
+        "user": "<service account name of Identity Security Platform>"
+        },
+    "mapping": {
+        "groups": [
+            {"from": "Auditors", "to": "Privilege Cloud Auditors"},
+            {"from": "Operators", "to": "Privilege Cloud Safe Managers"},
+            {"from": "Vault Admins", "to": "Privilege Cloud Administrators"}
+        ],
+        "roles": [
+            {"from": "Admin", "to": "Privilege Cloud Administrators"},
+            {"from": "Auditor", "to": "Privilege Cloud Auditors"},
+            {"from": "Safe manager", "to": "Privilege Cloud Safe Managers"},
+            {"from": "Standard user", "to": "Privilege Cloud Users"}
+        ]
+    },
+    "skip": {
+        "users": [],
+        "groups": [
+            "Backup Users",
+            "DR Users",
+            "Notification Engines",
+            "PVWAAppUsers",
+            "PVWAGWAccounts",
+            "PVWAMonitor",
+            "PVWAUsers"
+        ]
+    }
+}
